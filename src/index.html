@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurador de PC</title>
+</head>
+<body>
+    <div class="container">
+        <div class="components-section">
+            <h2>Componentes Disponibles</h2>
+            <div class="component-category">
+                <h3>Procesador</h3>
+                <select id="cpu">
+                    <option value="">Selecciona un procesador</option>
+                    <option value="intel-i5">Intel Core i5</option>
+                    <option value="intel-i7">Intel Core i7</option>
+                    <option value="amd-ryzen5">AMD Ryzen 5</option>
+                    <option value="amd-ryzen7">AMD Ryzen 7</option>
+                </select>
+            </div>
+            <div class="component-category">
+                <h3>Placa Base</h3>
+                <select id="motherboard">
+                    <option value="">Selecciona una placa base</option>
+                    <option value="asus-prime">ASUS Prime</option>
+                    <option value="msi-tomahawk">MSI Tomahawk</option>
+                    <option value="gigabyte-aorus">Gigabyte Aorus</option>
+                </select>
+            </div>
+            <div class="component-category">
+                <h3>Memoria RAM</h3>
+                <select id="ram">
+                    <option value="">Selecciona memoria RAM</option>
+                    <option value="corsair-8gb">Corsair 8GB</option>
+                    <option value="kingston-16gb">Kingston 16GB</option>
+                    <option value="gskill-32gb">G.Skill 32GB</option>
+                </select>
+            </div>
+            <div class="component-category">
+                <h3>Disco Duro</h3>
+                <select id="storage">
+                    <option value="">Selecciona un disco duro</option>
+                    <option value="samsung-ssd-500gb">Samsung SSD 500GB</option>
+                    <option value="wd-hdd-1tb">Western Digital HDD 1TB</option>
+                    <option value="crucial-ssd-1tb">Crucial SSD 1TB</option>
+                </select>
+            </div>
+            <div class="component-category">
+                <h3>Tarjeta Gráfica</h3>
+                <select id="gpu">
+                    <option value="">Selecciona una tarjeta gráfica</option>
+                    <option value="nvidia-rtx3060">NVIDIA RTX 3060</option>
+                    <option value="amd-rx6700xt">AMD RX 6700 XT</option>
+                    <option value="nvidia-rtx3080">NVIDIA RTX 3080</option>
+                </select>
+            </div>
+        </div>
+        <div class="selected-components">
+            <h2>Componentes Seleccionados</h2>
+            <ul id="selected-list"></ul>
+        </div>
+    </div>
+    <div id="log"></div>
+</body>
+</html>
